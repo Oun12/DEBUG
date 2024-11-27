@@ -115,7 +115,7 @@ body {
 .container .hero .btn .btn1:hover{
   cursor: pointer;
   background-color: rgb(0, 220, 0);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .container .hero .btn .btn2 {
   padding: 15px 25px;
