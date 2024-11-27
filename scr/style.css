@@ -126,6 +126,7 @@ body {
   background-color: rgba(5, 2, 16, 0.121);
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
+  cursor: pointer;
 }
 .hero .btn .btn1 .btn2:hover {
   background-color: rgba(55, 0, 255, 1);
