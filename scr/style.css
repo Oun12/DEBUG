@@ -250,6 +250,7 @@ body {
 .feature .feature-techno .card-skill img {
   height: 230px;
   width: 230px;
+  border-radius: 20px;
 }
 .feature .feature-techno .card-skill p {
   font-size: 1.6rem;
