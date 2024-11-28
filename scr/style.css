@@ -134,7 +134,7 @@ body {
 }
 .team {
   width: 60%;
-  height: 400px;
+  height: auto;
 }
 .team h1 {
   font-size: 35px;
@@ -148,11 +148,15 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .team .card-team {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  gap: 40px;
 }
 .team .card-team .card {
-  margin: 40px;
+  margin: 30px 0;
   width: 210px;
   height: 270px;
   background-color: #d9d9d94e;
@@ -172,7 +176,6 @@ body {
 .about-team {
   width: 85%;
   margin: 30px 0;
-  
 }
 .about-team h1 {
   padding: 20px 0;
@@ -205,6 +208,7 @@ body {
 }
 .about-team .infor-team .infor {
   text-align: start;
+  width: 100%;
   margin: 20px;
   color: #ffffff;
   font-size: 1.2rem;
