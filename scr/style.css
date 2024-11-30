@@ -155,6 +155,17 @@ body {
   justify-content: center;
   gap: 40px;
 }
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(250px) rotate(200deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
 .team .card-team .card {
   margin: 30px 0;
   width: 210px;
@@ -164,9 +175,14 @@ body {
   box-shadow: 0px 0px 14px 1px #d9d9d95a;
   border: 2px solid blue;
   transition: 1s;
+  opacity: 1;
+
+  opacity: 0.9;
+  animation: myAnim 2s ease 1s 1 normal none;
 }
-.team .card-team .card:hover{
-  transform: scale(1.2);
+.team .card-team .card:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 .team .card-team .card img {
   margin: 20px;
@@ -183,7 +199,7 @@ body {
 }
 .about-team h1 {
   padding: 20px 0;
-  height: 96px;
+  height: auto;
   background-color: #ffffff;
   font-size: 35px;
 
@@ -199,7 +215,7 @@ body {
   margin: 40px 0;
   display: flex;
   width: 100%;
-  height: 320px;
+  height: auto;
   background-color: #d9d9d962;
   border-radius: 20px;
 }
@@ -207,13 +223,13 @@ body {
   .about-team .infor-team {
     display: block;
   }
-  .header .logo{
+  .header .logo {
     font-size: 30px;
   }
-  .navbar-menu a{
+  .navbar-menu a {
     font-size: 10px;
   }
-  .navbar-menu ul li{
+  .navbar-menu ul li {
     display: none;
   }
 }
@@ -233,7 +249,9 @@ body {
 .infor-team .infor h2 {
   padding: 20px;
 }
-
+.infor-team .infor p {
+  padding: 30px;
+}
 /* feature and technology */
 .feature {
   padding: 10px 0;
@@ -274,7 +292,7 @@ body {
   width: 230px;
   border-radius: 10px;
 }
-.feature .feature-techno .card-skill:hover{
+.feature .feature-techno .card-skill:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
