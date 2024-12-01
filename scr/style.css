@@ -155,15 +155,48 @@ body {
   justify-content: center;
   gap: 40px;
 }
+
 @keyframes myAnim {
   0% {
+    animation-timing-function: ease-in;
     opacity: 0;
-    transform: translateY(250px) rotate(200deg);
+    transform: translateX(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-68px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px);
   }
 
   100% {
-    opacity: 1;
-    transform: translateY(0) rotate(0deg);
+    animation-timing-function: ease-out;
+    transform: translateX(0);
   }
 }
 .team .card-team .card {
@@ -175,11 +208,13 @@ body {
   box-shadow: 0px 0px 14px 1px #d9d9d95a;
   border: 2px solid blue;
   transition: 1s;
-  opacity: 1;
 
   opacity: 0.9;
-  animation: myAnim 2s ease 1s 1 normal none;
+  animation: myAnim 2s ease 0s 1 normal ;
 }
+.team .card-team #card .card{
+  animation: myAnim 2s ease 0s 1 normal ;
+} 
 .team .card-team .card:hover {
   transform: scale(1.1);
   opacity: 1;
